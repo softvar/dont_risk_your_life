@@ -1,10 +1,10 @@
 {
-  "name": "",
+  "name": "dont_play_with_life",
   "version": "1.0.0",
-  "description": "",
+  "description": "Save the lost man",
   "main": "main.js",
   "author": "Varun Malhotra",
-  "repository": "https://github.com/softvar/",
+  "repository": "https://github.com/softvar/dont_play_with_life",
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
