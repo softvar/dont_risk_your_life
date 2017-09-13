@@ -33,3 +33,6 @@ Screenshots
 <img src="screenshots/6.png"/>
 <img src="screenshots/7.png"/>
 <img src="screenshots/8.png"/>
+<img src="screenshots/9.png"/>
+<img src="screenshots/10.png"/>
+<img src="screenshots/11.png"/>
