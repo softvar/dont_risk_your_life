@@ -98,7 +98,7 @@ Splash.prototype = {
 			case 5:
 			case 7:
 				text = [
-					'LIGHT UP ALL THE CELLS',
+					'LIGHT ALL THE CELLS',
 					// 'CELLS',
 					'OF DAMAGED ' + (SP.num === 3 ? 'BRAIN' : SP.num === 5 ? 'HEART' : 'LUNGS'),
 					'OF A',
