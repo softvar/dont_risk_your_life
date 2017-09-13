@@ -63,8 +63,8 @@ Menu.prototype = {
             color = MN.fireColor,
             firstText = G.isGameOver ? 'WELL PLAYED' : 'DO NOT'
             firstSecondText = 'NOT',
-            secondText = G.isGameOver ? 'YOU SAVED' : 'PLAY';
-            thirdText = G.isGameOver ? 'THE' : 'WITH LIFE';
+            secondText = G.isGameOver ? 'YOU SAVED' : 'RISK';
+            thirdText = G.isGameOver ? 'THE' : 'YOUR LIFE';
             fText = G.isGameOver ? 'LOST MAN' : '';
 
 

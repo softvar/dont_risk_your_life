@@ -13,7 +13,7 @@ function Ball(config) {
 	B.speed = 10;
 	B.color = '#fff';
 	B.numCollided = 0;
-	B.maxCollisions = 10;
+	B.maxCollisions = 11;
 
 	CC.w = utils.pI(G.can.width);
 	CC.h = utils.pI(G.can.height);
@@ -289,31 +289,32 @@ Ball.prototype = {
 
 		ctx.fillText(t3, G.can.width - 80, G.can.height - 20);
 
-		var isDone = Ce.cells.every(function (c) {
+		B.isDone = Ce.cells.every(function (c) {
 			return c.mode === 2;
 		});
 
-		if (isDone) {
+		if (B.isDone) {
 			canvasToImage();
-			// setTimeout(function () {
+			B.gameDoneOrOver('W E L L  D O N E!');
+			setTimeout(function () {
+				// debugger
 				if (G.part === 1 || G.part === 2 || G.part === 3) {
 					SP.show();
 				} else {
 					G.stopCycle();
 				}
-			// }, 1000)
+			}, 2500);
 		}
+
 		if (B.numCollided >= B.maxCollisions) {
-			B.gameOver();
+			B.gameDoneOrOver('G A M E  O V E R');
 			setTimeout(function () {
 				G.restart();
 			}, 2500);
 		}
 
 	},
-	gameOver: function () {
-		var t = 'G A M E  O V E R';
-
+	gameDoneOrOver: function (t) {
 		ctx.fillStyle = 'rgb(255, 56, 8)';
 		ctx.font = '45px Helvetica';
 		ctx.fillText(t, (G.can.width - ctx.measureText(t).width) / 2, G.can.height / 2.1);
@@ -332,7 +333,9 @@ Ball.prototype = {
 		rs();
 
 		if (B.numCollided >= B.maxCollisions) {
-			B.gameOver();
+			B.gameDoneOrOver('G A M E  O V E R');
+		} else if (B.isDone) {
+			B.gameDoneOrOver('W E L L  D O N E!');
 		} else {
 			B.checkCollision();
 		}
