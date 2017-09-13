@@ -10,7 +10,7 @@ var gulp      =   require('gulp'),
   htmlmin     =   require('gulp-htmlmin'),
   replace     =   require('gulp-replace-path');
 
-var APP_NAME = 'dont_play_with_life';
+var APP_NAME = 'dont_risk_your_life';
 var bases = {
   app: 'src/',
   dist: 'dist/',
