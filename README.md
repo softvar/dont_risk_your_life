@@ -13,14 +13,14 @@ Please save the LOST man.
 
 **How?**
 
-Lit up all the cells of a human body part by hitting it through a moving cell.
+Light up all the cells of a human body part by hitting it through a moving cell.
 
 Rules
 -----
 
 1. Move mouse to position the paddle.
 2. Avoid hitting the bottom more than 10 times.
-3. Lit up cells can be crossed by a moving cell.
+3. Already lit cells can be crossed by a moving cell.
 
 Screenshots
 -----------

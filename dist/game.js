@@ -321,14 +321,14 @@ Splash.prototype = {
 			case 5:
 			case 7:
 				text = [
-					'LIT UP ALL THE CELLS',
+					'LIGHT UP ALL THE CELLS',
 					// 'CELLS',
 					'OF DAMAGED ' + (SP.num === 3 ? 'BRAIN' : SP.num === 5 ? 'HEART' : 'LUNGS'),
 					'OF A',
 					'LOST MAN',
 					'BY',
 					'Moving the mouse to position the paddle and avoiding the',
-					'moving cell to cross paddle and hit bottom more than 10 times.',
+					'moving cell to cross paddle and hitting bottom more than 10 times.',
 					'Note: Moving cell can cross the already lit cell. Don\'t be LOST!'
 				];
 				config = {
